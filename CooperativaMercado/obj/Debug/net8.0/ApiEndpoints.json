@@ -1,0 +1,748 @@
+[
+  {
+    "ContainingType": "CooperativaMercado.Controllers.DeudasController",
+    "Method": "AplicarMora",
+    "RelativePath": "api/Deudas/aplicarMora",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idDeuda",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "montoMora",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.DeudasController",
+    "Method": "generar",
+    "RelativePath": "api/Deudas/generarAlquiler",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mes",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "anio",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.DeudasController",
+    "Method": "GenerarDeudaEspecifica",
+    "RelativePath": "api/Deudas/generarDeudaEspecifica",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idTipoDeuda",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "mes",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "anio",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.DeudasController",
+    "Method": "GenerarDeudasParaPuesto",
+    "RelativePath": "api/Deudas/generarDeudasParaPuesto",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idPuesto",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "mes",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "anio",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.DeudasController",
+    "Method": "GenerarDeudasParaPuestos",
+    "RelativePath": "api/Deudas/generarDeudasParaPuestos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idPuestos",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "mes",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "anio",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.DeudasController",
+    "Method": "GenerarDeudasRecurrentes",
+    "RelativePath": "api/Deudas/generarDeudasRecurrentes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mes",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "anio",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.DeudasController",
+    "Method": "GenerarTodasLasDeudas",
+    "RelativePath": "api/Deudas/generarTodasLasDeudas",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mes",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "anio",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.DeudasController",
+    "Method": "getDeudas",
+    "RelativePath": "api/Deudas/getDeudas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.DeudasController",
+    "Method": "MisDeudas",
+    "RelativePath": "api/Deudas/misDeudas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.DeudasController",
+    "Method": "getPendientes",
+    "RelativePath": "api/Deudas/pendientes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.DeudasController",
+    "Method": "reporteDeudasPagadas",
+    "RelativePath": "api/Deudas/reporteDeudasPagadas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.DeudasController",
+    "Method": "reporteDeudasPendientes",
+    "RelativePath": "api/Deudas/reporteDeudasPendientes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.DeudasController",
+    "Method": "saveDeuda",
+    "RelativePath": "api/Deudas/saveDeuda",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "deuda",
+        "Type": "CooperativaMercado.Model.Deuda",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.IngresosController",
+    "Method": "getIngresos",
+    "RelativePath": "api/Ingresos/getIngresos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.IngresosController",
+    "Method": "MisIngresos",
+    "RelativePath": "api/Ingresos/misIngresos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inicio",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "fin",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.IngresosController",
+    "Method": "Registrar",
+    "RelativePath": "api/Ingresos/registrar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CooperativaMercado.Model.RegistrarIngresoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.IngresosController",
+    "Method": "RegistrarAdmin",
+    "RelativePath": "api/Ingresos/registrarAdmin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ingreso",
+        "Type": "CooperativaMercado.Model.IngresoDiario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.IngresosController",
+    "Method": "reporteIngresos",
+    "RelativePath": "api/Ingresos/reporteIngresos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inicio",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "fin",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.IngresosController",
+    "Method": "reporteIngresosPuesto",
+    "RelativePath": "api/Ingresos/reporteIngresosPuesto",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inicio",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "fin",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.PagosController",
+    "Method": "getPagos",
+    "RelativePath": "api/Pagos/getPagos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.PagosController",
+    "Method": "Pagar",
+    "RelativePath": "api/Pagos/pagar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idDeuda",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "monto",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "metodo",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.PagosController",
+    "Method": "RegistrarPago",
+    "RelativePath": "api/Pagos/registrarPago",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CooperativaMercado.Model.RegistrarPagoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.PagosController",
+    "Method": "reporteRecaudado",
+    "RelativePath": "api/Pagos/reporteRecaudado",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inicio",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "fin",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.PuestosController",
+    "Method": "asignar",
+    "RelativePath": "api/Puestos/asignar",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idPuesto",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "idSocio",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.PuestosController",
+    "Method": "desasignar",
+    "RelativePath": "api/Puestos/desasignar",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idPuesto",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "motivo",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.PuestosController",
+    "Method": "getPuestos",
+    "RelativePath": "api/Puestos/getPuestos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.PuestosController",
+    "Method": "ObtenerHistorial",
+    "RelativePath": "api/Puestos/historial/{idPuesto}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idPuesto",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.PuestosController",
+    "Method": "ObtenerMisPuestos",
+    "RelativePath": "api/Puestos/misPuestos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.PuestosController",
+    "Method": "savePuesto",
+    "RelativePath": "api/Puestos/savePuesto",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "puesto",
+        "Type": "CooperativaMercado.Model.Puesto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.PuestosController",
+    "Method": "updatePuesto",
+    "RelativePath": "api/Puestos/updatePuesto",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "puesto",
+        "Type": "CooperativaMercado.Model.Puesto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.ReportesController",
+    "Method": "GenerarBoleta",
+    "RelativePath": "api/Reportes/boleta/{idDeuda}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idDeuda",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.ReportesController",
+    "Method": "DeudasExcel",
+    "RelativePath": "api/Reportes/excel-deudas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.ReportesController",
+    "Method": "DeudasPendientesExcel",
+    "RelativePath": "api/Reportes/excel-deudas-pendientes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.ReportesController",
+    "Method": "DeudasPendientesPdf",
+    "RelativePath": "api/Reportes/pdf-deudas-pendientes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.ReportesController",
+    "Method": "PagosPdf",
+    "RelativePath": "api/Reportes/pdf-pagos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.SociosController",
+    "Method": "getSocio",
+    "RelativePath": "api/Socios/getSocio/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.SociosController",
+    "Method": "getSocios",
+    "RelativePath": "api/Socios/getSocios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.SociosController",
+    "Method": "ReactivarSocio",
+    "RelativePath": "api/Socios/reactivar/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.SociosController",
+    "Method": "RetirarSocio",
+    "RelativePath": "api/Socios/retirar/{idSocio}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idSocio",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "motivoRetiro",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.SociosController",
+    "Method": "saveSocio",
+    "RelativePath": "api/Socios/saveSocio",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "socio",
+        "Type": "CooperativaMercado.Model.Socio",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.SociosController",
+    "Method": "updateSocio",
+    "RelativePath": "api/Socios/updateSocio",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "socio",
+        "Type": "CooperativaMercado.Model.Socio",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.SociosController",
+    "Method": "ValidarRetiro",
+    "RelativePath": "api/Socios/validarRetiro/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.UsuarioController",
+    "Method": "CrearUsuarioConSocio",
+    "RelativePath": "api/Usuario/crearUsuarioConSocio",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CooperativaMercado.Model.CrearUsuarioConSocioRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.UsuarioController",
+    "Method": "Login",
+    "RelativePath": "api/Usuario/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "CooperativaMercado.Model.Usuario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.UsuarioController",
+    "Method": "MisDatos",
+    "RelativePath": "api/Usuario/misDatos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CooperativaMercado.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CooperativaMercado.WeatherForecast, CooperativaMercado, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]
