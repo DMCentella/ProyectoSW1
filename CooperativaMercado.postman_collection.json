@@ -1,0 +1,1361 @@
+{
+  "info": {
+    "_postman_id": "29ea1d41-f704-4ac2-9649-d784aa697c78",
+    "name": "CooperativaMercado",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52781166",
+    "_collection_link": "https://go.postman.co/collection/52781166-29ea1d41-f704-4ac2-9649-d784aa697c78?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Deudas",
+      "item": [
+        {
+          "name": "ObtenerDeudas",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIklkVXN1YXJpbyI6IjEiLCJJZFNvY2lvIjoiIiwiZXhwIjoxNzc3NDE5OTcyfQ.Bwaxo-hzD6wbZsDEsxLp79KG4iQzo-MtfqTlhNriIcM",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7086/api/Deudas/getDeudas",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7086",
+              "path": [
+                "api",
+                "Deudas",
+                "getDeudas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DeudasPendientes",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIklkVXN1YXJpbyI6IjEiLCJJZFNvY2lvIjoiIiwiZXhwIjoxNzc3NDE5OTcyfQ.Bwaxo-hzD6wbZsDEsxLp79KG4iQzo-MtfqTlhNriIcM",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7086/api/Deudas/pendientes",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7086",
+              "path": [
+                "api",
+                "Deudas",
+                "pendientes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "MisDeudas(Socio)",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoic29jaW8yIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiU29jaW8iLCJJZFVzdWFyaW8iOiIzIiwiSWRTb2NpbyI6IjIiLCJleHAiOjE3Nzc0MDg4NjN9.9F-GOZeaNF0DsHUREi3Uwl-vcdlRrGQ5ByjSZVQCCIU",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7086/api/Deudas/misDeudas",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7086",
+              "path": [
+                "api",
+                "Deudas",
+                "misDeudas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GenerarTodasLasDeudas(admin)",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIklkVXN1YXJpbyI6IjEiLCJJZFNvY2lvIjoiIiwiZXhwIjoxNzc3NDE5OTcyfQ.Bwaxo-hzD6wbZsDEsxLp79KG4iQzo-MtfqTlhNriIcM",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"idPuesto\": 1,\r\n  \"idTipoDeuda\": 4,\r\n  \"descripcion\": \"Limpieza especial\",\r\n  \"monto\": 100.00,\r\n  \"mes\": 5,\r\n  \"anio\": 2026,\r\n  \"fechaVencimiento\": \"2026-05-31\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7086/api/Deudas/generarTodasLasDeudas?mes=6&anio=2026",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7086",
+              "path": [
+                "api",
+                "Deudas",
+                "generarTodasLasDeudas"
+              ],
+              "query": [
+                {
+                  "key": "mes",
+                  "value": "6"
+                },
+                {
+                  "key": "anio",
+                  "value": "2026"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GenerarAlquiler(admin)",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        },
+        {
+          "name": "AplicarMora(admin)",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIklkVXN1YXJpbyI6IjEiLCJJZFNvY2lvIjoiIiwiZXhwIjoxNzc3NDE5OTcyfQ.Bwaxo-hzD6wbZsDEsxLp79KG4iQzo-MtfqTlhNriIcM",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "https://localhost:7086/api/Deudas/aplicarMora?idDeuda=85&montoMora=30.00",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7086",
+              "path": [
+                "api",
+                "Deudas",
+                "aplicarMora"
+              ],
+              "query": [
+                {
+                  "key": "idDeuda",
+                  "value": "85"
+                },
+                {
+                  "key": "montoMora",
+                  "value": "30.00"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ReportesDeudasPendientes",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIklkVXN1YXJpbyI6IjEiLCJJZFNvY2lvIjoiIiwiZXhwIjoxNzc3NDE5OTcyfQ.Bwaxo-hzD6wbZsDEsxLp79KG4iQzo-MtfqTlhNriIcM",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7086/api/Deudas/pendientes",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7086",
+              "path": [
+                "api",
+                "Deudas",
+                "pendientes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ReportesDeudasPagadas",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIklkVXN1YXJpbyI6IjEiLCJJZFNvY2lvIjoiIiwiZXhwIjoxNzc3NDE5OTcyfQ.Bwaxo-hzD6wbZsDEsxLp79KG4iQzo-MtfqTlhNriIcM",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7086/api/Deudas/reporteDeudasPagadas",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7086",
+              "path": [
+                "api",
+                "Deudas",
+                "reporteDeudasPagadas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GenerarDeudaParaUnPuesto(admin)",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIklkVXN1YXJpbyI6IjEiLCJJZFNvY2lvIjoiIiwiZXhwIjoxNzc3NDE5OTcyfQ.Bwaxo-hzD6wbZsDEsxLp79KG4iQzo-MtfqTlhNriIcM",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"idPuesto\": 1,\r\n  \"idTipoDeuda\": 4,\r\n  \"descripcion\": \"Limpieza especial\",\r\n  \"monto\": 100.00,\r\n  \"mes\": 5,\r\n  \"anio\": 2026,\r\n  \"fechaVencimiento\": \"2026-05-31\"\r\n}"
+            },
+            "url": {
+              "raw": "https://localhost:7086/api/Deudas/generarDeudasParaPuesto?idPuesto=17&mes=6&anio=2026",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7086",
+              "path": [
+                "api",
+                "Deudas",
+                "generarDeudasParaPuesto"
+              ],
+              "query": [
+                {
+                  "key": "idPuesto",
+                  "value": "17"
+                },
+                {
+                  "key": "mes",
+                  "value": "6"
+                },
+                {
+                  "key": "anio",
+                  "value": "2026"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GenerarDeudaEspecifica(admin))",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIklkVXN1YXJpbyI6IjEiLCJJZFNvY2lvIjoiIiwiZXhwIjoxNzc3NDE5OTcyfQ.Bwaxo-hzD6wbZsDEsxLp79KG4iQzo-MtfqTlhNriIcM",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "https://localhost:7086/api/Deudas/generarDeudaEspecifica?idTipoDeuda=2&mes=6&anio=2026",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7086",
+              "path": [
+                "api",
+                "Deudas",
+                "generarDeudaEspecifica"
+              ],
+              "query": [
+                {
+                  "key": "idTipoDeuda",
+                  "value": "2"
+                },
+                {
+                  "key": "mes",
+                  "value": "6"
+                },
+                {
+                  "key": "anio",
+                  "value": "2026"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Ingresos",
+      "item": [
+        {
+          "name": "RegistrarIngreso(socio)",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoic29jaW8yIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiU29jaW8iLCJJZFVzdWFyaW8iOiIzIiwiSWRTb2NpbyI6IjIiLCJleHAiOjE3Nzc0MDg4NjN9.9F-GOZeaNF0DsHUREi3Uwl-vcdlRrGQ5ByjSZVQCCIU",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"idPuesto\": 2,\r\n  \"fecha\": \"2026-05-28\",\r\n  \"monto\": 620.00\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7086/api/Ingresos/registrar",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7086",
+              "path": [
+                "api",
+                "Ingresos",
+                "registrar"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ObtenerIngresos(admin)",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIklkVXN1YXJpbyI6IjEiLCJJZFNvY2lvIjoiIiwiZXhwIjoxNzc3NDE5OTcyfQ.Bwaxo-hzD6wbZsDEsxLp79KG4iQzo-MtfqTlhNriIcM",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7086/api/Ingresos/getIngresos",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7086",
+              "path": [
+                "api",
+                "Ingresos",
+                "getIngresos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "MisIngresos(Socios)",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoic29jaW8yIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiU29jaW8iLCJJZFVzdWFyaW8iOiIzIiwiSWRTb2NpbyI6IjIiLCJleHAiOjE3Nzc0MDg4NjN9.9F-GOZeaNF0DsHUREi3Uwl-vcdlRrGQ5ByjSZVQCCIU",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7086/api/Ingresos/misIngresos?inicio=2026-05-01&fin=2026-05-31",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7086",
+              "path": [
+                "api",
+                "Ingresos",
+                "misIngresos"
+              ],
+              "query": [
+                {
+                  "key": "inicio",
+                  "value": "2026-05-01"
+                },
+                {
+                  "key": "fin",
+                  "value": "2026-05-31"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ReporteIngresoPorpuesto(admin)",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIklkVXN1YXJpbyI6IjEiLCJJZFNvY2lvIjoiIiwiZXhwIjoxNzc3NDE5OTcyfQ.Bwaxo-hzD6wbZsDEsxLp79KG4iQzo-MtfqTlhNriIcM",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7086/api/Ingresos/reporteIngresosPuesto?inicio=2026-05-01&fin=2026-05-31",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7086",
+              "path": [
+                "api",
+                "Ingresos",
+                "reporteIngresosPuesto"
+              ],
+              "query": [
+                {
+                  "key": "inicio",
+                  "value": "2026-05-01"
+                },
+                {
+                  "key": "fin",
+                  "value": "2026-05-31"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "RegistrarIngreso(admin)",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIklkVXN1YXJpbyI6IjEiLCJJZFNvY2lvIjoiIiwiZXhwIjoxNzc3NDE3MjE5fQ.tVTswfutpEnCQvMbTh4yiWaU30SKi7EGNJWxb28oilA",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"idPuesto\": 1,\r\n  \"fecha\": \"2026-05-28\",\r\n  \"monto\": 620.00,\r\n  \"idUsuario\": 2\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7086/api/Ingresos/registrarAdmin",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7086",
+              "path": [
+                "api",
+                "Ingresos",
+                "registrarAdmin"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Pagos",
+      "item": [
+        {
+          "name": "PagarDeuda(admin)",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIklkVXN1YXJpbyI6IjEiLCJJZFNvY2lvIjoiIiwiZXhwIjoxNzc3NDE5OTcyfQ.Bwaxo-hzD6wbZsDEsxLp79KG4iQzo-MtfqTlhNriIcM",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "\r\n{ \r\n\"idDeuda\": 85, \r\n\"monto\": 220.00, \r\n\"metodoPago\": \"Efectivo\" \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7086/api/Pagos/registrarPago",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7086",
+              "path": [
+                "api",
+                "Pagos",
+                "registrarPago"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ObtenerPagos(admin)",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIklkVXN1YXJpbyI6IjEiLCJJZFNvY2lvIjoiIiwiZXhwIjoxNzc3NDE5OTcyfQ.Bwaxo-hzD6wbZsDEsxLp79KG4iQzo-MtfqTlhNriIcM",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7086/api/Pagos/getPagos",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7086",
+              "path": [
+                "api",
+                "Pagos",
+                "getPagos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ReporteRecaudado(admin)",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIklkVXN1YXJpbyI6IjEiLCJJZFNvY2lvIjoiIiwiZXhwIjoxNzc3NDE5OTcyfQ.Bwaxo-hzD6wbZsDEsxLp79KG4iQzo-MtfqTlhNriIcM",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7086/api/Pagos/reporteRecaudado?inicio=2026-01-01&fin=2026-05-31",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7086",
+              "path": [
+                "api",
+                "Pagos",
+                "reporteRecaudado"
+              ],
+              "query": [
+                {
+                  "key": "inicio",
+                  "value": "2026-01-01"
+                },
+                {
+                  "key": "fin",
+                  "value": "2026-05-31"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Puestos",
+      "item": [
+        {
+          "name": "ObtenerPuestos(admin)",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIklkVXN1YXJpbyI6IjEiLCJJZFNvY2lvIjoiIiwiZXhwIjoxNzc3NDE3MjE5fQ.tVTswfutpEnCQvMbTh4yiWaU30SKi7EGNJWxb28oilA",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7086/api/Puestos/getPuestos",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7086",
+              "path": [
+                "api",
+                "Puestos",
+                "getPuestos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CrearPuesto(admin)",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIklkVXN1YXJpbyI6IjEiLCJJZFNvY2lvIjoiIiwiZXhwIjoxNzc3NDAzNDY3fQ.XnYlSJb8fAzyktdQcdBpc8oSZDkyI6F_Q20LM9dpCGY",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"numero\": \"P17\",\r\n  \"metraje\": 12.5,\r\n  \"ubicacion\": \"Zona sur\",\r\n  \"giro\": \"Ropa\",\r\n  \"montoAlquiler\": 380.00,\r\n  \"idSocio\": null,\r\n  \"observaciones\": null\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7086/api/Puestos/savePuesto",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7086",
+              "path": [
+                "api",
+                "Puestos",
+                "savePuesto"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ActualizarPuesto(admin)",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        },
+        {
+          "name": "AsignarPuestoSocio(admin)",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIklkVXN1YXJpbyI6IjEiLCJJZFNvY2lvIjoiIiwiZXhwIjoxNzc3NDAzNDY3fQ.XnYlSJb8fAzyktdQcdBpc8oSZDkyI6F_Q20LM9dpCGY",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7086/api/Puestos/asignar?idPuesto=17&idSocio=12",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7086",
+              "path": [
+                "api",
+                "Puestos",
+                "asignar"
+              ],
+              "query": [
+                {
+                  "key": "idPuesto",
+                  "value": "17"
+                },
+                {
+                  "key": "idSocio",
+                  "value": "12"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DesasignarPuestoSocio(admin)",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIklkVXN1YXJpbyI6IjEiLCJJZFNvY2lvIjoiIiwiZXhwIjoxNzc3NDAzNDY3fQ.XnYlSJb8fAzyktdQcdBpc8oSZDkyI6F_Q20LM9dpCGY",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7086/api/Puestos/desasignar?idPuesto=13&motivo=Retiro%20voluntario",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7086",
+              "path": [
+                "api",
+                "Puestos",
+                "desasignar"
+              ],
+              "query": [
+                {
+                  "key": "idPuesto",
+                  "value": "13"
+                },
+                {
+                  "key": "motivo",
+                  "value": "Retiro%20voluntario"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "HistorialPorPuesto(admin)",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIklkVXN1YXJpbyI6IjEiLCJJZFNvY2lvIjoiIiwiZXhwIjoxNzc3NDAzNDY3fQ.XnYlSJb8fAzyktdQcdBpc8oSZDkyI6F_Q20LM9dpCGY",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7086/api/Puestos/historial/13",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7086",
+              "path": [
+                "api",
+                "Puestos",
+                "historial",
+                "13"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "MisPuestos(Socio)",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoic29jaW8yIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiU29jaW8iLCJJZFVzdWFyaW8iOiIzIiwiSWRTb2NpbyI6IjIiLCJleHAiOjE3Nzc0MDg4NjN9.9F-GOZeaNF0DsHUREi3Uwl-vcdlRrGQ5ByjSZVQCCIU",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "https://localhost:7086/api/Puestos/misPuestos",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7086",
+              "path": [
+                "api",
+                "Puestos",
+                "misPuestos"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Socios",
+      "item": [
+        {
+          "name": "ObtenerSocio(admin)",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIklkVXN1YXJpbyI6IjEiLCJJZFNvY2lvIjoiIiwiZXhwIjoxNzc3NDAzNDY3fQ.XnYlSJb8fAzyktdQcdBpc8oSZDkyI6F_Q20LM9dpCGY",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7086/api/Socios/getSocios",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7086",
+              "path": [
+                "api",
+                "Socios",
+                "getSocios"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ObtenerSocioPorId(admin)",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIklkVXN1YXJpbyI6IjEiLCJJZFNvY2lvIjoiIiwiZXhwIjoxNzc3NDAzNDY3fQ.XnYlSJb8fAzyktdQcdBpc8oSZDkyI6F_Q20LM9dpCGY",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7086/api/Socios/getSocio/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7086",
+              "path": [
+                "api",
+                "Socios",
+                "getSocio",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ActualizarSocio(admin)",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIklkVXN1YXJpbyI6IjEiLCJJZFNvY2lvIjoiIiwiZXhwIjoxNzc3NDAzNDY3fQ.XnYlSJb8fAzyktdQcdBpc8oSZDkyI6F_Q20LM9dpCGY",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "  {\"idSocio\": 1,\r\n    \"nombre\": \"Juan Carlos Pérez López\",\r\n    \"dni\": \"70111111\",\r\n    \"telefono\": \"999111123\",\r\n    \"activo\": true\r\n   }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7086/api/Socios/updateSocio",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7086",
+              "path": [
+                "api",
+                "Socios",
+                "updateSocio"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "RetirarSocio(admin)",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIklkVXN1YXJpbyI6IjEiLCJJZFNvY2lvIjoiIiwiZXhwIjoxNzc3NDA2OTE2fQ.26-IQ4uJWmufg9lIjYd4lwISlgWbLsDtqCw2Ia8q12E",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7086/api/Socios/retirar/11?motivoRetiro=Retiro%20voluntario",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7086",
+              "path": [
+                "api",
+                "Socios",
+                "retirar",
+                "11"
+              ],
+              "query": [
+                {
+                  "key": "motivoRetiro",
+                  "value": "Retiro%20voluntario"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ReactivarSocio(admin)",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIklkVXN1YXJpbyI6IjEiLCJJZFNvY2lvIjoiIiwiZXhwIjoxNzc3NDA2OTE2fQ.26-IQ4uJWmufg9lIjYd4lwISlgWbLsDtqCw2Ia8q12E",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7086/api/Socios/reactivar/11",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7086",
+              "path": [
+                "api",
+                "Socios",
+                "reactivar",
+                "11"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Usuario",
+      "item": [
+        {
+          "name": "Login(Todos)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"username\": \"admin\",\r\n  \"password\": \"admin123\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7086/api/Usuario/login",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7086",
+              "path": [
+                "api",
+                "Usuario",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CrearUsuarioSocio(admin)",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIklkVXN1YXJpbyI6IjEiLCJJZFNvY2lvIjoiIiwiZXhwIjoxNzc3NDAzNDY3fQ.XnYlSJb8fAzyktdQcdBpc8oSZDkyI6F_Q20LM9dpCGY",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"username\": \"socio12\",\r\n  \"password\": \"socio123\",\r\n  \"nombreSocio\": \"Raul Garcia\",\r\n  \"dni\": \"56743452\",\r\n  \"telefono\": \"9875678796\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7086/api/Usuario/crearUsuarioConSocio",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7086",
+              "path": [
+                "api",
+                "Usuario",
+                "crearUsuarioConSocio"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "DatosUsuario(socio)",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoic29jaW8yIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiU29jaW8iLCJJZFVzdWFyaW8iOiIzIiwiSWRTb2NpbyI6IjIiLCJleHAiOjE3Nzc0MDg4NjN9.9F-GOZeaNF0DsHUREi3Uwl-vcdlRrGQ5ByjSZVQCCIU",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7086/api/Usuario/misDatos",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7086",
+              "path": [
+                "api",
+                "Usuario",
+                "misDatos"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "reportes",
+      "item": [
+        {
+          "name": "ReporteDeudasExel(admin)",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIklkVXN1YXJpbyI6IjEiLCJJZFNvY2lvIjoiIiwiZXhwIjoxNzc3NDE5OTcyfQ.Bwaxo-hzD6wbZsDEsxLp79KG4iQzo-MtfqTlhNriIcM",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7086/api/Reportes/excel-deudas",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7086",
+              "path": [
+                "api",
+                "Reportes",
+                "excel-deudas"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "deudas.xlsx",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://localhost:7086/api/Reportes/excel-deudas",
+                  "protocol": "https",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "7086",
+                  "path": [
+                    "api",
+                    "Reportes",
+                    "excel-deudas"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Content-Length",
+                  "value": "7613"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 28 Apr 2026 18:00:42 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Kestrel"
+                },
+                {
+                  "key": "Content-Disposition",
+                  "value": "attachment; filename=Deudas.xlsx; filename*=UTF-8''Deudas.xlsx"
+                }
+              ],
+              "cookie": [],
+              "body": "PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000\u0015h�\\�ނh�\u0000\u0000\u0000�\u0001\u0000\u0000\u000f\u0000\u0000\u0000xl/workbook.xml�PMo�0\f�+Q�#]%���p��\u0005M\u001a��!q�E�Tq\n��K\n\u0015h����񞟽ڌ�c\u0017�����uQq\u0006^\u0005����!��\u000f�Y���\u001a��\u0018�yOMl�M�o� e�IZ�\u001e|�\u0010�L9�'\u0011�A\u0005۠\u0006\u0007>����D�N���,���j�Ԩ� 5Y�些�������Ȳw�K\u0007-?X��{�3Q�\n�F��3�\u0014��H髈�<�@��\u00178��e��C�|<\u0010���-\fZ泦�N�r\u0016\u001b� �t=\u000b=�\u001a\fz��/�\u001c*٩rE\u000e\u0013�^��˙8;^�\u0002PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000\u0015h�\\U�F�V\u0001\u0000\u00007\u0003\u0000\u0000\u0010\u0000\u0000\u0000docProps/app.xml��]O�0\u0014����=\f�\u0018�l%DL�Q\u0017!zi��\u00194nmӞ-௷\u001b\b\u0013D\u0013���<;}��x�.��F�V\t\u001b�\u0007,@%t&�2a\u0015�k6�1�(�ڠ%�.�(\u0017Ք�\u0015���Љ\u0015����P��k[\u0002��]�:ϥ��\u0016U����`p\u0015fZ4���bcб]?0��kB�a�3{G�:O�)�\u0000�{��RX�tN��Z`\u0011�G��_H*�=�)Xr<�)�Q���\u001b8ld\u0013V\u0018G�\u0005N~��%k�6�3�2pq�\u000f�K\u0017���^�\u0016�oj���½�\u001f����\u000e���\u0014�=c_�������ߥ\u001d�\u0017m��\n�N\r:lw,�|�\u0002~�+���\u0000%f�\u0013��\u000f�<����%����A����9��J��A�t���\u000b(�ƿ\u001f�C�e\u000eY;=�\u0001�\u0013PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000\u0015h�\\�1u\u0017�\u0000\u0000\u0000�\u0002\u0000\u0000\u0014\u0000\u0000\u0000xl/sharedStrings.xmlu�Mk�0\f\u0006�\u0012|_mwmׅ$���AN��TM\u0004��e��_�dc��.��#\u0019�6����\u0001�0�V�\u0012\u0015�!�Џ�(��r\u0014���k�\\-���\u0015Sα���\t��M��\u0017���L^�i�\u0014\u0013�\u001bM\u0000�Y�U� �A/~�µ�/@94rݯ���O/�\u000f\u0010y�\b��^i������ďnyz�i�Ӟ�\u0003Oo<\u001dyzgI+�شzͧ��\u001f^˓�,�\u001dC\u0017\u0011�����\u0001�u�\u000b��\u001bPK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000\u0015h�\\t��{P\u0002\u0000\u0000\u0002\t\u0000\u0000\r\u0000\u0000\u0000xl/styles.xml�Vmk�0\u0010�+B�W'��\u0011┭�P(�X3�W�>�Ze�H��鯟�l'�Б1:\u0006�\u0017�=��to���\u001eZA��\rW2�˫\u0005% \u000bUrY�����{z��\fk�\u0007\u0001\u000f\r\u0000\u0012ːf=��A��Ib�\u0006Zf�T\u0007�~��n\u0019ZU׉�4��8Z+��b�.i\u0019��y�}��hH�z�v�#���L��'8�Q%���d�I&��TJ�^Vt��j��\u000f�ג�Hi�\f\b.�;�)=\u0007x��@���D�yJ�l��d-\u0004�\u001b&x�y�+�rq\b_Vcl���\u0007ۿ\u0019L\u0014B��\u0010����[;�\bZfV%Q�\u001d:[v�b��l�KR��a�z{ʋ��$W���w:\u0001\u0001$%g��L|��\f��'�d�t�-\u0005TH�\\�\u0000_*[\u0012읉�us\u0011�\u0013�\r��\u0012�5\u000f\u0019!��\u0012b`8�1�K�#'�r�<\u0012}�\u000b\u0010��y�^���P�\u001f>9��oQ\f��ºN\u001c��6\u0007����Z\u0019P7\u0014��ѳf�?\r-��\u0007�V\b\u0005���\u0007�M\b\u0011�x��\u001b7�,�OBLz�^�~�\u000fD���elӟ��P�J�l4\"�����客\u001a$h&�{e�\u0017����M\t_\u0015������Y���W��E\n�\u0006a��p;C?z��:�1�w�\u001a��i4��;����C�y�%y���_�߬v<\u0001G��\u000f��\u00031��=�)�w�l�k*{�s�\\F-���yu�7��\tPK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000\u0015h�\\E�\u0005�\f\u0007\u0000\u0000o9\u0000\u0000\u0018\u0000\u0000\u0000xl/worksheets/sheet1.xml���n�F\u0014E��{,�.\u0019�\u0003[A�\u0000-\u0012$E�LS#�0�!��/��>���\u000b\u0019\u001eID(�]�y3���K�-����Ͽ�?��+�I�����\u001f\\�}OՅ^����?t�w\u000b�k��^畮Ս��Z������gm\u001e۝R�gG��ks�ﺮ����b��y{�\u001bU�l��>�����fS\u0016�.\u000e{Uw�p>OgFUyg���ʦ�O��\u0004q^�\u0019q_\u0016F�z�]\u0015z\u001al�6F�kB�W����r�\u0017��/�?okm�ʂӈ�����v���C��n���\u000feUv��\n<PJFy×ځ���w\"��j�\u001f����Z}5^{��-�ޫJ?�C�W|+���V�n��F��.���\u000f�g��ƿ\u000b�W��z��_�znGK^\u0000\u001f�~�\u0017>�o��h��/|��c��j�\u001f��~�M�p�_��1��~��g�\u001c᛼n�O�\u0011}�_}ׯ��\u000e�����y��'\"(��=�\f��k��挸~�\u000b\u0001^��v�/CE,\u001e׌Y�s�\u0004���\u001f-\u0002h\u0011���E��h�\u0018-�@�\u0001Z�l0e�b1ڹy:\u0006�\t�\u0004�%�\u00063\u0016-\u0011�%c�p\u0002-\u0005h)��\u0005������\u0001��k\u0019@˘\r.Y�L���т\t�\u0005@[0\u001b�\u0018�̶\u0010�-�l�\t�%`[rl�=�~)f;7O�-'؂9���9������xC���)>h����o�l\u0017𝫧\u0001��m��@�\u001b>v��l\u0017�]�!��C~��\r\u001fo\b�\u000b�\"7}\u0005H\u0012\u0014H���\u0013CU���)(��?�,��t�!]P �rc\fU��CΠ@����\u0018�����A���\"W�P��_�<(�\u001e_�>������\u001f\u0014\b�/�\u0005ߎ�n�7D��@�7�\u000b�\u00027���т�\u0007x�px�\b�ο\u0010��\u0002���v\u0001_�x�!P =���\u0018���\u000f��\u0002ٗf�\n�\u0012���!�\u0007\u0005�/�l\u0017�]�c��C��@z���1T��/�\u0007\u0005��W���*�|�>(�^�r}\fU��\u001b!}P �|�.x�ᨏ\b郂7|�[\f�\u000b������o��A��M\u0006[\r��j�o\b�\u0004\u001f|=\u0015�_g�U�7�G���C��@vwf�\bol�l��\"yP =�\u0012\u0007��>&�\u000ed\u000f\n�|l�=\u0015VC�tyL�!{P �c�칰\u001a����\u0004\u001f�\u0007\u0005R>�{�q�xs5���=(���f���[:�~1�\u0007\u0005���l\u0015�\r]!\u001er\u0007\u0005�\u0017��\u0003^����\u0011���V\u0011^膇�\u0011���V\u0011^�\u0007��!7\u0007[Ex�\u001b\u001e2\u0007\u0005���|\u0017�#F�@�R��\u0002�ԍ\u000f�#vx�ເ/s�C�\u001d�;�.�[��!s�\u000e�\u001d|\u0017�#A�H\u001c�;�.�7t�|�\u001d\u0014���V�\u0017��+�b� wP 3/[Ex�\u001b\u001er\u0007\u00052�U�\u0017��!wP 3/[Ex�\u001b\u001e��x\"6/[Ex�\u001b\u001eR\u0007\u00052�U���̑ sP 4/�\u0005|�\u001b\u001f2\u0007\u0005B��]��p�C�@h^�\u000b��N|)2\u0007\u0005B��]�o�\n��9(\u0010���\u0002>7u�H\u001d\u0014\b��w\u0001��;R�\u000e\nd�e����Е�2H�;(����\"��\r\u000f��\u0002�y�*�K���?W�b�U����!wP 3/[Exn��R�\u000e\nd�e�\boᆇ�A�м|\u0017�-��2d\u000e\n���<��\u0015�!sP 4/�\u0005|�\u001b\u001f2\u0007\u0005B��]�\u0017��!sP 4/�\u0005|n�Ȑ:(\u0010���\u0002>7wd�\u001d\u0014���V���˶��!wP 3/[Ex�\u001b\u001e���Ll^���27<�\u000e\nd�e�\b��/\u001d\u0019r\u0007\u00052�U�w����nF�@f^�\n���\u0010\u000f��\u0002�y�.�\u000b���9(\u0010���\"�Ѝ\u000f��\u0002�y�.����9(\u0010���\"�؍\u000f��\u0002�y�.�sSG?Ŋ�c�%xw�]�'r��b.Vcʺ���\u001c;o�M�C�]^�T�)��3������b�N��<�#�֔���Z\u001d�h�W�o�\u001f�ٖv�Jm,�����9�\f;.t�9����N��%��\u000f�쇢���v���0�w�\u001d\u001a��\u001be��?�$���`)��斢�|14�Z?��T��~\u0012߳\u001f�~\u0010�Vh��5��*/\u001e���߻��C�\u0001�&'l�+TU�����h?am�:ډ��hc��e�T��Z�Ў蟈�����\u0018~�M�z�>��!���y��?\u0001PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000\u0015h�\\`L���\u0005\u0000\u0000�\u001b\u0000\u0000\u0013\u0000\u0000\u0000xl/theme/theme1.xml�YOo�6\u0014�*��-�k\u0012�-b�n�&m�x\u001dz�eZbC�\u0002I'�mh�\u0003\u0006\f�]\u0006�ð�@\u000b��}�l\u001d�\u000e�W�#%K�-�N�b\u001b�\u001c\u0012����{��D1W�?\b\u0019:&BR\u001eu\u001d�r�A$���F~י��\r����xK\u0005$$\b����]'P*ުդ\u0007�X^�1��ٔ�\u0010+�\n�6\u0011�\u0004���֨�;�\u0010��A\u0011\u000eI׹3�R���V�d�\u0007\f~EJ�\u0005��C��X\u0012\u0006;9r�\u001f9�}&�1f]\u0007x&�dD\u001e(\u00071,\u0015<�:u��ڵ��L��\n����,\u0004S��Q�\b\n�I���敝�� �Z\u0005\u000e\u0006����5\u001a\u0004�<��]\u0001��\u001bn/�Z@%�U��z��Z\u0012(04W\u00046{�^{�\u00160�d�Z\u0011بwZ�\r[���a{Շ�v�߱\u0005\f*\u0019vV\u0004�W6;�%\u0001�\n\u0018��V�:�y�2̔����\r�od���j�JK\u0014D���B|��!\u0000L���\u0011R�L�\u0007�>\u000eǂbÀ�\b.\n    <J�<�����\u0004�U��0ưAr̫�?�z�\u0014�z����Ӈ?�>zt��2ɛ8�/����o>A>����/+\u0004dQ�\u001f?���/*���|�Փߟ=y��g|��\f�-�\u001fѐHt���\u0003\u001ej�J(�X�Qd\u0014`j��\u0000�eȁ\n,��9f��\u001e�cxW@[(Eޘݷ�=\f�L�2� ��{��\u001e\u0017�>�2t\u0005�f�_�/fE�\u0001�ǥ���,\u000ff1TvV�66 ���\f\u0012�}\u0012\u0011��3~DH��=J���QOpɧ\nݣ��iy`Ft�ʥn�\u0010\u00124�\u0015Y�\"�w\u0017�8+%�!�6\u0014v\bf�J\t��y\u0003�\u0014\u000e˭�!+Bw�\nJ\r=�\u000b�\n�T�t�0�\u0006\u0013\"e��\u001d��΅nahQ�\u0015���\r\u0015�\u001e�Bw1�E�\u000e?�\u00078����QP\u0004 ��b1���\u000en�\u0019=���:�w)Qg��\u001fQ?(/\u0016�d&\u0016]���!�^׬\u0019�n}Ѭ���6���:-�\u0012�\u001fm�;x\u0016�\u0013]�\u0017}��/_�����qހk�s�Q\u0018V\u001e����C5gdW��-�}2\u0019¢�\u0018��P\u001f\u00070\\�Y@_`3F����\n\u000e\u0003\u001c\u0003�k(|���%����\t�R��6��Ykg\u001f�\u0000�j�O������)23_\u0016��Zźt�+�J�&�5��v\u0005_��|�BL�̂�\u0003�:��oĤ�\u0019���\u001a\u0016�9�L�\u0000OH�*��\u0017��n��'��|��w�['WE�V\u0015a�<�U_MVmuw�Ȟ�\u00130��h;��qי��\u000b�a\f\n�~�c��\u001d��Ro޸��}�(P�^��E\u0012\u000b�v�\f\u00121�(���r\u0017\u001am\b�y�Pִ֟�����vԖ3L�S⩊�|�>�3E�a09Ac6\u0013\u0007\u0018,�E\u000b\u001eM��WIc1�;7\u001dq3��@�\u001f��~�}�Y\u001c�G������83��\n��*�K_���U��7_t�µCsb.��| 0�u�u�P\u0001�~\u0014\u0007�\u001b\n8Q\u001820\f�n�1�0}���%ǅ\u0016�(I\u001a�\u001f�\u0003�#A��@\u0010��ROߠ�]t�t{��Ҏ�\u0019,���\u001c\u00136қ��C� k+i,\fp9q�<���\u001f��OEi��ؐS%\u001a֥+�\u0004\n��w��/�{�\u00106�뿀c�AB�\u00174r*<���G�\u0000�\u0000�N(�Kɑ\u0004�m���`u���i]����'\"'~���B���R��@��\u0011OGV��z*�7L�7�>9->y�l��]||\u001f�w��jƔL���\u0000n\r��D\u000e\u0014��F���PK\u0003\u0004\u0014\u0000\u0000\u0000\u0000\u0000\u0015h�\\�\r3��\u0001\u0000\u0000�\u0001\u0000\u0000Q\u0000\u0000\u0000package/services/metadata/core-properties/93a638fa4fd7477582a3b676d3380bfa.psmdcp﻿\n        <?xml version=\"1.0\" encoding=\"utf-8\"?>\n        <coreProperties xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns=\"http://schemas.openxmlformats.org/package/2006/metadata/core-properties\">\n            <dcterms:created xsi:type=\"dcterms:W3CDTF\">2026-04-28T18:00:42.5388217Z</dcterms:created>\n            <dcterms:modified xsi:type=\"dcterms:W3CDTF\">2026-04-28T18:00:42.5388449Z</dcterms:modified>\n        </coreProperties>PK\u0003\u0004\u0014\u0000\u0000\u0000\u0000\u0000\u0015h�\\1�j`�\u0002\u0000\u0000�\u0002\u0000\u0000\u000b\u0000\u0000\u0000_rels/.rels\n        <?xml version=\"1.0\" encoding=\"utf-8\"?>\n        <Relationships xmlns=\"http://schemas.openxmlformats.org/package/2006/relationships\">\n            <Relationship Type=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument\" Target=\"/xl/workbook.xml\" Id=\"R0dc43d84125149e3\" />\n            <Relationship Type=\"http://schemas.openxmlformats.org/officeDocument/2006/relationships/extended-properties\" Target=\"/docProps/app.xml\" Id=\"rId1\" />\n            <Relationship Type=\"http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties\" Target=\"/package/services/metadata/core-properties/93a638fa4fd7477582a3b676d3380bfa.psmdcp\" Id=\"R83f98e464eca4a7f\" />\n        </Relationships>PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000\u0015h�\\\f�H��\u0000\u0000\u0000�\u0002\u0000\u0000\u001a\u0000\u0000\u0000xl/_rels/workbook.xml.rels��AN�0\u0010E�b͞LZP�P�n���\u0002�3��&����l,8\u0012W�\u0004\taĂM6����������z{\u001d\u0007�B���5,�\u001a\u0014y\u001b��w\u001a���=�v�>�`$�`�GV�ų\u0006'\u0012�\u0010�:\u001a\rW!�ϕ6��H>�\u000e��'�\u0011.�z��'\u0003J�:�\"��\u0018ڶ��\u000b�<��?���$j�%�\t\u0018�Ѥ�D\u0003^��Te2�}�!�{P8���\u0006��2e��Ü\u000e��N숤���?�-o��h9���^*m��k-EV�\b\u0016�p�\u0001PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000\u0015h�\\Z;R@<\u0001\u0000\u00007\u0004\u0000\u0000\u0013\u0000\u0000\u0000[Content_Types].xml��MN�0\u0010��\u0012y�b�,\u0010BM�\u0000�P\t.`ٓĪ�䙖�l,8\u0012W`���PE\u0005�Ɩ33�{\u001e�y}����W+(�Rl�X�D\u0005�$�b׈%����M'ϛ\fXqj�F�D�F)4=\u0004�2e�\u001ciS\t�xY:��Y�\u000e��ht�L�\u0004�j�j���\u000eZ��Tݯ��\u000e�墺��mQ��9{g4qX���\u0001�S�:\u00036�e�\u0012�����\u0003P�r�e�.^\f�� 3c�&�\r��/iR�:\u0017�\u0016r��a\nx�\u001f�+�\u001c�]�B<�Y\u0015g���B\u000f:���>��\f*V���\u0012��-�C�;\u0004_{��.`���Ay����}�\bm<��� z\f���b�@n\u0007O�3���\u001f3B�*a7��a��\u0013��\u001b�~\u0000PK\u0001\u0002\u0014\u0000\u0014\u0000\u0000\u0000\b\u0000\u0015h�\\�ނh�\u0000\u0000\u0000�\u0001\u0000\u0000\u000f\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000xl/workbook.xmlPK\u0001\u0002\u0014\u0000\u0014\u0000\u0000\u0000\b\u0000\u0015h�\\U�F�V\u0001\u0000\u00007\u0003\u0000\u0000\u0010\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000'\u0001\u0000\u0000docProps/app.xmlPK\u0001\u0002\u0014\u0000\u0014\u0000\u0000\u0000\b\u0000\u0015h�\\�1u\u0017�\u0000\u0000\u0000�\u0002\u0000\u0000\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000�\u0002\u0000\u0000xl/sharedStrings.xmlPK\u0001\u0002\u0014\u0000\u0014\u0000\u0000\u0000\b\u0000\u0015h�\\t��{P\u0002\u0000\u0000\u0002\t\u0000\u0000\r\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000�\u0003\u0000\u0000xl/styles.xmlPK\u0001\u0002\u0014\u0000\u0014\u0000\u0000\u0000\b\u0000\u0015h�\\E�\u0005�\f\u0007\u0000\u0000o9\u0000\u0000\u0018\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000)\u0006\u0000\u0000xl/worksheets/sheet1.xmlPK\u0001\u0002\u0014\u0000\u0014\u0000\u0000\u0000\b\u0000\u0015h�\\`L���\u0005\u0000\u0000�\u001b\u0000\u0000\u0013\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000k\r\u0000\u0000xl/theme/theme1.xmlPK\u0001\u0002\u0014\u0000\u0014\u0000\u0000\u0000\u0000\u0000\u0015h�\\�\r3��\u0001\u0000\u0000�\u0001\u0000\u0000Q\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Q\u0013\u0000\u0000package/services/metadata/core-properties/93a638fa4fd7477582a3b676d3380bfa.psmdcpPK\u0001\u0002\u0014\u0000\u0014\u0000\u0000\u0000\u0000\u0000\u0015h�\\1�j`�\u0002\u0000\u0000�\u0002\u0000\u0000\u000b\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000�\u0015\u0000\u0000_rels/.relsPK\u0001\u0002\u0014\u0000\u0014\u0000\u0000\u0000\b\u0000\u0015h�\\\f�H��\u0000\u0000\u0000�\u0002\u0000\u0000\u001a\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000_\u0018\u0000\u0000xl/_rels/workbook.xml.relsPK\u0001\u0002\u0014\u0000\u0014\u0000\u0000\u0000\b\u0000\u0015h�\\Z;R@<\u0001\u0000\u00007\u0004\u0000\u0000\u0013\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000z\u0019\u0000\u0000[Content_Types].xmlPK\u0005\u0006\u0000\u0000\u0000\u0000\n\u0000\n\u0000�\u0002\u0000\u0000�\u001a\u0000\u0000\u0000\u0000"
+            }
+          ]
+        },
+        {
+          "name": "ReportesPdfPagos(admin)",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIklkVXN1YXJpbyI6IjEiLCJJZFNvY2lvIjoiIiwiZXhwIjoxNzc3NDE5OTcyfQ.Bwaxo-hzD6wbZsDEsxLp79KG4iQzo-MtfqTlhNriIcM",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7086/api/Reportes/pdf-pagos",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7086",
+              "path": [
+                "api",
+                "Reportes",
+                "pdf-pagos"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
